@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Joe Lapinski | Full Stack Engineering & Design</title>
+        <link rel="stylesheet" type="text/css" href="./css/potfolio_website.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video" width="100%">
+                <source src="images/video/typing.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Joe Lapinski | Full-Stack Developer</h1>
+            <strong>
+                <p class="center">
+                    Thanks for visiting my portfolio. I like making fun, interactive things with code. 
+                    <br>
+                    <br>
+                    Check out my work. If you have an idea, contact me!  
+                    <br>
+                    <br>            
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./images/JoeAvatar.png" alt="Joe">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code! As a father of two, I also enjoy time with my family, telling my kids to put their shoes on, growing blueberries & raspberries for the neighborhood birds, and traveling. 
+                    <br>
+                    <br>I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Boot Camp, and am trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, and more. 
+                    <br>
+                    <br>I also hold a Masters in Library & Information Science. If you are looking for a <b>Full-Stack Developer</b> with a passion for creative design for your next project, <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    From creative websites and coding projects that leverage a wide range of programming languages and development skills - check out some of my coding projects on Github, below!
+                    <br>
+                    <p class="center"><a href="https://github.com/JAL212" target="_blank">Joe's GitHub</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/JAL212" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="./images/contact.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/mzbnwvej" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, inserted my formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy JAL Inc.</p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
