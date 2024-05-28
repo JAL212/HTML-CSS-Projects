@@ -5,6 +5,7 @@
 		<title>Marigold's Bakery | Thougtful Baked Goods</title>
 		<link rel="stylesheet" href="./css/shared.css">
 		<link rel="stylesheet" href="./css/animations.css">
+		<script src="JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 	
@@ -40,7 +41,7 @@
 					<!-- PHOTO-CONTAINER 1-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/image_1.jpg" alt="orange cake">
+							<img src="./images/thumb/image_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="orange cake">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Come try something sweet!</p>
@@ -52,7 +53,7 @@
 					<!-- PHOTO-CONTAINER 2-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/image_2.jpg" alt="baking">
+							<img src="./images/thumb/image_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="baking">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Come try something sweet!</p>
@@ -64,7 +65,7 @@
 					<!-- PHOTO-CONTAINER 3-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/image_3.jpg" alt="cupcake">
+							<img src="./images/thumb/image_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="cupcake">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Come try something sweet!</p>
@@ -76,7 +77,7 @@
 					<!-- PHOTO-CONTAINER 4-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/image_4.jpg" alt="lavender cake">
+							<img src="./images/thumb/image_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="lavender cake">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Come try something sweet!</p>
@@ -88,7 +89,7 @@
 					<!-- PHOTO-CONTAINER 5-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/image_5.jpg" alt="carrot cake">
+							<img src="./images/thumb/image_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="carrot cake">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Come try something sweet!</p>
@@ -100,7 +101,7 @@
 					<!-- PHOTO-CONTAINER 6-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/image_6.jpg" alt="spring cupcakes">
+							<img src="./images/thumb/image_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="spring cupcakes">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Come try something sweet!</p>
@@ -112,7 +113,7 @@
 					<!-- PHOTO-CONTAINER 7-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/image_7.jpg" alt="honey apple tarts">
+							<img src="./images/thumb/image_7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="honey apple tarts">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Come try something sweet!</p>
@@ -124,7 +125,7 @@
 					<!-- PHOTO-CONTAINER 8-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/image_8.jpg" alt="fresh bagels">
+							<img src="./images/thumb/image_8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="fresh bagels">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Come try something sweet!</p>
@@ -136,7 +137,7 @@
 					<!-- PHOTO-CONTAINER 9-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/image_9.jpg" alt="berry almond loaf">
+							<img src="./images/thumb/image_9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="berry almond loaf">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Come try something sweet!</p>
@@ -144,6 +145,103 @@
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 9-->
+					<!-- The Modal/Lightbox -->
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					
+							<div class="mySlides">
+								<div class="numbertext">1 / 9</div>
+								<img src="./images/thumb/image_1.jpg" style="width:100%">
+							</div>
+					
+							<div class="mySlides">
+								<div class="numbertext">2 / 9</div>
+								<img src="./images/thumb/image_2.jpg" style="width:100%">
+							</div>
+					
+							<div class="mySlides">
+								<div class="numbertext">3 / 9</div>
+								<img src="./images/thumb/image_3.jpg" style="width:100%">
+							</div>
+					
+							<div class="mySlides">
+								<div class="numbertext">4 / 9</div>
+								<img src="./images/thumb/image_4.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">5 / 9</div>
+								<img src="./images/thumb/image_5.jpg" style="width:100%">
+							</div>
+					
+							<div class="mySlides">
+								<div class="numbertext">6 / 9</div>
+								<img src="./images/thumb/image_6.jpg" style="width:100%">
+							</div>
+					
+							<div class="mySlides">
+								<div class="numbertext">7 / 9</div>
+								<img src="./images/thumb/image_7.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">8 / 9</div>
+								<img src="./images/thumb/image_8.jpg" style="width:100%">
+							</div>
+					
+							<div class="mySlides">
+								<div class="numbertext">9 / 9</div>
+								<img src="./images/thumb/image_9.jpg" style="width:100%">
+							</div>
+						
+							<!-- Next/previous controls -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						
+							<!-- Caption text -->
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<!-- Thumbnail image controls -->
+							<div class="column">
+								<img class="demo" src="./images/thumb/image_1.jpg" onclick="currentSlide(1)" alt="Nature">
+							</div>
+						
+							<div class="column">
+								<img class="demo" src="./images/thumb/image_2.jpg" onclick="currentSlide(2)" alt="Snow">
+							</div>
+						
+							<div class="column">
+								<img class="demo" src="./images/thumb/image_3.jpg" onclick="currentSlide(3)" alt="Mountains">
+							</div>
+						
+							<div class="column">
+								<img class="demo" src="./images/thumb/image_4.jpg" onclick="currentSlide(4)" alt="Lights">
+							</div>
+								
+							<div class="column">
+								<img class="demo" src="./images/thumb/image_5.jpg" onclick="currentSlide(5)" alt="Nature">
+							</div>
+							
+							<div class="column">
+								<img class="demo" src="./images/thumb/image_6.jpg" onclick="currentSlide(6)" alt="Snow">
+							</div>
+							
+							<div class="column">
+								<img class="demo" src="./images/thumb/image_7.jpg" onclick="currentSlide(7)" alt="Mountains">
+							</div>
+							
+							<div class="column">
+								<img class="demo" src="./images/thumb/image_8.jpg" onclick="currentSlide(8)" alt="Lights">
+							</div>
+							
+							<div class="column">
+								<img class="demo" src="./images/thumb/image_9.jpg" onclick="currentSlide(9)" alt="Mountains">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>		
