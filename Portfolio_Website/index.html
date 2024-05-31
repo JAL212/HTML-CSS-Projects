@@ -4,7 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
-        <title>Joe Lapinski | Full Stack Engineering & Design</title>
+        <title>Joe Lapinski | Full Stack Developer</title>
+        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
         <link rel="stylesheet" type="text/css" href="./css/potfolio_website.css">
     </head>
 
@@ -14,9 +15,13 @@
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <!-- New section added -->
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <a href="#LinkedIn">LinkedIn</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -37,31 +42,98 @@
             <h1 class="white-text">Joe Lapinski | Full-Stack Developer</h1>
             <strong>
                 <p class="center">
-                    Thanks for visiting my portfolio. I like making fun, interactive things with code. 
+                    I'm a Python Bootcamp Graduate, with a Masters in Library & Information Science.
+                    <br>
+                    I like problem solving and making fun, interactive things with code. 
                     <br>
                     <br>
-                    Check out my work. If you have an idea, contact me!  
+                    My professional background informs my coding approach: 
                     <br>
-                    <br>            
+                    always valuing the accuracy of information 
+                    <br> 
+                    and aiming to facilitate better access & understanding of data collections.
+                    <br>
+                    <br>
+                    Thanks for visiting my portfolio. 
+                    <br>
+                    Check out my work, and if you have an idea or are looking for support... 
+                    <br>
+                    <br>
+                    Contact me!
+                    <br>           
                 </p>
             </strong>
+        </div>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/JoeAvatar_Square.png" alt="Joe Avatar">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/html-css-javascript.jpg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/python-logo.png" alt="Python logo">
+                        <div class="text">the popular programming language Python (including React, jQuery, Node.js, and more),</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/joe_archives.JPEG" alt="Joe in the Archives">
+                        <div class="text">A background in libraries & archives has also devloped my object-oriented way of thinking. </div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/contact_me.png" alt="contact"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
         </div>
 
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
             <div class="Column_2">
-                <img src="./images/JoeAvatar.png" alt="Joe">
+                <img src="./images/About_Joe.png" alt="About Joe">
             </div>
             <!--Right column-->
             <div class="Column_1">
-                <h1>About</h1>
+                <h1>About Me</h1>
                 <p>
-                    I am a software developer who loves to code! As a father of two, I also enjoy time with my family, telling my kids to put their shoes on, growing blueberries & raspberries for the neighborhood birds, and traveling. 
+                    I am a software developer who loves to code! As a father of two, I also enjoy time with my family, growing blueberries & raspberries in our garden, managing fantasy sports teams, and traveling.
                     <br>
-                    <br>I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Boot Camp, and am trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, and more. 
                     <br>
-                    <br>I also hold a Masters in Library & Information Science. If you are looking for a <b>Full-Stack Developer</b> with a passion for creative design for your next project, <a href="#Contact">Contact</a> me below!
+                    As a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Boot Camp, I am trained and experienced in the following programming languages: HTML, CSS, JavaScript, SQL, Python, and more. 
+                    <br>
+                    <br>
+                    If you are looking for a <b>Full-Stack Developer</b> for your next project, <a href="#Contact">Contact</a> me below!
                 </p>
             </div>
         </div>
@@ -83,34 +155,48 @@
             </div>
         </div>
 
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="./images/contact.jpg" alt="Contact_Image">
+        <!--LinkedIn section-->
+        <div class="Row" id="LinkedIn">
+            <!--Left column-->
+            <div class="Column_2">
+                <a href="https://www.linkedin.com/in/joseph-lapinski" target="_blank"><img src="images/linkedin.png" alt="linkedin Logo"></a>
             </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="https://formspree.io/f/mzbnwvej" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, inserted my formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                </form>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>LinkedIn</h1>
+                <p>
+                    For my work & education history, along with a list of professional skills & traits, please visit my LinkedIn profile.
+                    <br>
+                    <p class="center"><a href="https://www.linkedin.com/in/joseph-lapinski" target="_blank">Joe's LinkedIn</a></p>
+                </p>
             </div>
         </div>
 
-        <!--Footer section-->
-        <footer>
-            <p>
-                <p class="center">&copy JAL Inc.</p>
-                <br>
-            </p>
-        </footer>
-    </body>
-</html>
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/f/mzbnwvej" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                     <h1>Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" placeholder="Type your name here" name="name" required>
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" placeholder="Type your phone number here" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
+            </div>
+         </div>
+         
+         <!-- Footer section -->
+         <footer>
+                 <p class="center">&copy JAL Inc. | 2024 </p><br>
+         </footer>
+         <script src="js/portfolio_website.js"></script>
+     </body>
+ </html>
