@@ -3,7 +3,7 @@ This is my repository for a number of projects completed for the <b>HTML & CSS C
 
 <h3>Projects</h3>
 
-<h1>Vintage Movie Theater Website</h1>
+<h1><a href="https://github.com/JAL212/HTML-CSS-Projects/blob/main/bootstrap4_project/academy_cinemas.html">Vintage Movie Theater Website</a></h1>
     Created a Movie Theater homepage and styled it using Bootstrap 4. It contains several Bootstrap style features like navbar, jumbotron, drop-down, image cards, and more.
 
 <h1>Bakery Website</h1>
