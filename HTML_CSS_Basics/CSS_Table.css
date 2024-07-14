@@ -1,0 +1,18 @@
+table {
+	border: 2px solid silver;
+}
+
+td:hover {
+	background-color: navy;
+	color: red;
+}
+
+tr, th {
+	background-color: red;
+	color: navy;
+}
+
+tr, td {
+	background-color: gainsboro;
+	color: white;
+}

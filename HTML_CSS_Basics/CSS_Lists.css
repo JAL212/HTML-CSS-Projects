@@ -1,0 +1,19 @@
+ol {
+	list-style-type: decimal;
+}
+
+ul {
+	list-style-type: square;
+}
+
+h1 {
+	color: lightskyblue;
+}
+
+li {
+	color: red;
+}
+
+h1 {
+	text-shadow: 2px 2px;
+}
